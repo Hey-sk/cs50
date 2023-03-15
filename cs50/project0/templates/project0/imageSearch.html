@@ -1,0 +1,20 @@
+{% extends 'project0/layout.html' %}
+
+{% block listItemLinks %}
+<li>
+    <a href="{% url 'project0:index'%}">Google Search</a>
+</li>
+{% endblock %}
+
+{% block search %}
+<div class="logoWrapper">
+    <h1 class="googlelogo">Google</h1>
+    <h3 class="googleSubTitle">images</h3>
+</div>
+<form action="https://google.com/search">
+    <input class='searchinput' type="text" name="q">
+    <input type="submit" value="Google Search">
+    <input type="button" value="I'm feeling lucky">
+</form>
+
+{% endblock %}

@@ -1,0 +1,26 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="{% static 'project0/styles.css' %}">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                {% block listItemLinks %}
+
+                {% endblock %}
+            </ul>
+        </nav>
+        <main>
+            {% block search %}
+
+            {% endblock %}
+        </main>
+        <footer>
+            carbon neutral since 2007
+        </footer>
+    </body>
+</html>
